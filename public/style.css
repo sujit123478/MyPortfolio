@@ -1,0 +1,314 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+/* NavBar */
+#page1{
+  height: 100vh;
+ background-color: #43aaea8c;
+  
+}
+.NavBar:hover{
+  background-color: #212A3E;
+
+}
+.NavBar{
+    height: 10vh;
+    width: 100%;
+    background-color: #3948670b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logo{
+  margin-right: 7rem;
+  margin-bottom: 10px;
+  height: 2rem;
+  float: left;
+}
+ .SecondNav{
+  float: right;
+} 
+
+.lists{
+  color:white;
+  margin:0px 10px;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+.lists:hover{
+  background-color: #b2b3b47e;
+  transition: .5ms;
+  text-decoration-line: underline ;
+
+}
+.NavBar ul li{
+  display: inline-flex;
+
+}
+.NavBar div{
+  display: inline;
+}
+.Menu{
+  display: none;
+}
+@media (max-width:885px){
+  #MenuLists{
+    display: none;
+  }
+  .Menu{
+    display: block;
+    float: right;
+  }
+  .Show{
+    display: flex !important;
+    flex-direction:column ;
+    background-color: #6a82b2;
+    position: absolute;
+    top:65px;
+    width: 100vw;
+    align-items: center;
+    gap: 10px;
+    padding:20px;
+   left: 0;
+  }
+  .SecondNav{
+    float: none;
+  }
+  .NavBar{
+    display: block;
+    padding: 10px;
+  
+  }
+}
+/* Nav End */
+
+
+/* Hero section start */
+  .Heading{
+    margin-left: 1.5;
+  }
+
+.hero{
+  height: 90vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family:  sans-serif;
+}
+.HeroImage{
+  height: 100%;
+ 
+}
+.Ht1{
+  color: rgba(0, 0, 0, 0.897);
+}
+.MyName{
+  color:  rgb(111, 125, 213);
+}
+.HeroButton{
+  border: none;
+  border-radius: 5px;
+  height: 2rem ;
+ background-color: rgb(111, 125, 213);
+ color: white;
+ padding: 5px;
+}
+@keyframes typeWriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+}
+}
+.animated-text {
+  animation: typeWriter 3s steps(8) 3s infinite normal both;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #000;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin: 0;
+}
+/* hero section end */
+
+
+/* Services start */
+.mainServicecontainer{
+  height: 100%;
+  text-align: center;
+  margin: 30px;
+  
+}
+.serviceHeading{
+  color: #000;
+  font-weight: bolder;
+  font-size:xx-large;
+}
+.strongLine{
+  color: #3d6bc7;
+}
+.servicePara{
+  margin: 20px;
+  padding: 20px;
+  line-height: 1.7;
+}
+.ServicesContainer {
+  display: grid;
+  gap: 50px;
+  grid-template-columns:30vw 30vw 30vw ;
+  
+}
+.ServicesImage img{
+  height: 40px;
+  width: 40px;
+}
+.ServicesItems{
+margin: 15%;
+ text-align: center;
+
+}
+.ServicesHeading{
+  margin: 5%;
+}
+.ServicesImage{
+  border-radius: 40px; 
+  padding: 8px;
+}
+
+@media (max-width: 900px) {
+  .ServicesContainer{ 
+    grid-template-columns: repeat(1, 1fr) ;
+   }
+   .ServicesItems{
+    margin: 10px;
+   }
+}
+/* Services End */
+
+
+
+/* About start */
+.Center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MyPhoto img{
+  
+  border-radius: 50%;
+  height:150px;
+}
+
+.AboutMyPara{
+  text-align:center;
+  color: rgba(32, 27, 27, 0.996);
+  font-family: sans-serif;
+  margin: 15px;
+}
+.About{
+  background-color: whitesmoke;
+  padding: 20px;
+  height: 100%;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.338);
+}
+.AboutHeading{
+  font-family: sans-serif;
+  color:  rgb(111, 125, 213);
+  margin: 20px;
+
+}
+/* about end */
+
+/* Hiring section */
+.hiringPage{
+  margin-top: 10px;
+  gap: 10px;
+   padding: 20px;
+  height: 100vh;
+  text-align: center;
+  
+}
+.contractForm{
+ margin:5% 20px;
+ padding: 10px;
+ border: 2px solid black;
+ background-color: #e8ebef;
+
+}
+
+.section{
+  width: 100%;
+  
+}
+#subject{
+  width: 70%;
+  border: 2px solid #ccc;
+  height: 30px;
+  margin: 20px;
+  padding: 10px;
+}
+#name{
+  width: 70%;
+  border: 2px solid #ccc;
+  height: 30px;
+  margin: 20px;
+  padding: 10px;
+}
+#email{
+  width: 70%;
+  border: 2px solid #ccc;
+  height: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+#button{
+  width: 70%;
+  background-color: #3d6bc7;
+  border: 2px solid #ccc;
+  height: 30px;
+  margin: 10px;
+}
+textarea {
+  width: 70%;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  margin: 10px;
+}
+.hiringPara{
+  margin: 15px;
+}
+/* contract */
+.Footer{
+  height: 4rem;
+  background-color: #212A3E ;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ButtonLink{
+  text-decoration: none;
+  color: white;
+}
+.NavBar{
+  justify-content: space-evenly;
+}
+.NavLink a{
+  text-decoration: none;
+  color: #ccdbe4;
+  font-family: sans-serif;
+}
+
+
